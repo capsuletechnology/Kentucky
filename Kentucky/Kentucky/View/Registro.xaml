@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kentucky.View.Registro">
+  <ContentPage.Content>
+    <Grid Padding="10">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+      <Label Grid.Row="0" Grid.ColumnSpan="2" Text="Registrar" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+      <Entry Grid.Row="1" Grid.ColumnSpan="2" Text="{Binding Email}" Placeholder="E-mail"/>
+      <Entry Grid.Row="2" Grid.ColumnSpan="2" Text="{Binding Usuario}" Placeholder="Escolher nome de usuário"/>
+      <Entry Grid.Row="3" Grid.ColumnSpan="2" Text="{Binding Senha}" Placeholder="Escolher senha"/>
+      <Entry Grid.Row="4" Grid.ColumnSpan="2" Text="{Binding CPF}" Placeholder="CPF"/>
+      <Button Grid.Row="5" Grid.Column="0" Text="Registrar" Command="{Binding RegistrarCommand}"/>
+      <Button Grid.Row="5" Grid.Column="1" Text="Cancelar" Command="{Binding CancelarCommand}"/>
+    </Grid>
+  </ContentPage.Content>
+</ContentPage>
