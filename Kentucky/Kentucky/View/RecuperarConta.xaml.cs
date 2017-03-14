@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kentucky.Helper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,8 +13,13 @@ namespace Kentucky.View
     {
         public RecuperarConta()
         {
-            NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+            Repositorio.MainPage(new Inicio());
+            return true;
         }
     }
 }

@@ -12,8 +12,7 @@ namespace Kentucky
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new View.Login());
+            MainPage = new View.Inicio();
         }
 
         protected override void OnStart()

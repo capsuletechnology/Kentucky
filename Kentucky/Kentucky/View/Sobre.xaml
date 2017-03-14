@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kentucky.View.Sobre"
+             Title="Sobre">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Ação 1" Order="Secondary"/>
+    <ToolbarItem Text="Ação 2" Order="Secondary"/>
+  </ContentPage.ToolbarItems>
+  <ContentPage.Content>
+    <Grid VerticalOptions="Center" HorizontalOptions="Center">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+      </Grid.RowDefinitions>
+      <Label Grid.Row="0" Text="Projeto Kentucky" FontSize="Large" HorizontalTextAlignment="Center"/>
+      <Label Grid.Row="1" Text="Versão 1.0" FontSize="Large" HorizontalTextAlignment="Center"/>
+      <Label Grid.Row="2" Text="Uma aplicação desenvolvida por:" FontSize="Medium" HorizontalTextAlignment="Center"/>
+      <Image Grid.Row="3" Source="icon"/>
+      <Label Grid.Row="4" Text="Capsule Technology" FontSize="Large" HorizontalTextAlignment="Center"/>
+      <Label Grid.Row="5" Text="Everton Vanzella" FontSize="Medium" HorizontalTextAlignment="Center"/>
+      <Label Grid.Row="6" Text="Gabriel Dias" FontSize="Medium" HorizontalTextAlignment="Center"/>
+      <Label Grid.Row="7" Text="Gilson Santos" FontSize="Medium" HorizontalTextAlignment="Center"/>
+      <Label Grid.Row="8" Text="Jean Souza" FontSize="Medium" HorizontalTextAlignment="Center"/>
+    </Grid>
+  </ContentPage.Content>
+</ContentPage>

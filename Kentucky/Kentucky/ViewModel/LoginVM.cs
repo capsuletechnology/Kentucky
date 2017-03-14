@@ -1,4 +1,6 @@
 ﻿using Kentucky.Helper;
+using Kentucky.View;
+using Kentucky.View.MasterDetail;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -7,7 +9,7 @@ namespace Kentucky.ViewModel
     public class LoginVM : ViewModelBase
     {
         public ICommand LoginCommand { get; set; }
-        public ICommand RegistrarCommand { get; set; }
+        public ICommand FacebookCommand { get; set; }
         public ICommand RecuperarCommand { get; set; }
 
         private string login;
@@ -18,24 +20,24 @@ namespace Kentucky.ViewModel
 
         public LoginVM()
         {
-            RegistrarCommand = new Command(Registrar);
-            RecuperarCommand = new Command(RecuperarConta);
             LoginCommand = new Command(Logar);
+            FacebookCommand = new Command(EntrarFacebook);
+            RecuperarCommand = new Command(RecuperarConta);            
         }
         
-        async void Logar()
+        void Logar()
         {
-            await Repositorio.Navegar(new View.Principal());
+            Repositorio.MainPage(new MainPage());
         }
 
-        async void Registrar()
+        void EntrarFacebook()
         {
-            await Repositorio.Navegar(new View.Registro());
+            Repositorio.MainPage(new MainPage());
         }
 
-        async void RecuperarConta()
+        void RecuperarConta()
         {
-            await Repositorio.Navegar(new View.RecuperarConta());
+            Repositorio.MainPage(new RecuperarConta());
         }
     }
 }

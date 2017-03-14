@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kentucky.Helper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,15 @@ namespace Kentucky.View
     {
         public Login()
         {
-            NavigationPage.SetHasNavigationBar(this, false);            
+            NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
             this.BindingContext = new ViewModel.LoginVM();
+        }
+        
+        protected override bool OnBackButtonPressed()
+        {
+            Repositorio.MainPage(new Inicio());
+            return true;
         }
     }
 }

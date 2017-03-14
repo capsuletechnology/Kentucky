@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Kentucky.View.MasterDetail;assembly=Kentucky"
+             xmlns:view="clr-namespace:Kentucky.View;assembly=Kentucky"
+             x:Class="Kentucky.View.MasterDetail.MainPage">
+  <MasterDetailPage.Master>
+    <local:MasterPage x:Name="masterPage"/>
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <NavigationPage>
+      <x:Arguments>
+        <view:Principal />
+      </x:Arguments>
+    </NavigationPage>
+  </MasterDetailPage.Detail>
+</MasterDetailPage>

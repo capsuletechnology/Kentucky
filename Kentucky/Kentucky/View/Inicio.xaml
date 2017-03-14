@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             xmlns:control="clr-namespace:Kentucky.Helper;assembly=Kentucky"
+             x:Class="Kentucky.View.Inicio">
+
+  <ContentPage.Content>
+    <Grid Padding="10">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+      </Grid.RowDefinitions>
+      <StackLayout Grid.Row="0" BackgroundColor="#80000000" Padding="12">
+        <Label TextColor="White" Text="ANÔNIMOS" FontSize="Large" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+      </StackLayout>
+      <Grid Grid.Row="1" Grid.RowSpacing="0">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <cv:CarouselView Position="{Binding Position, Mode=TwoWay}" Grid.Row="0" ItemsSource="{Binding ImagensInicio}" x:Name="Carousel">
+          <cv:CarouselView.ItemTemplate>
+            <DataTemplate>
+              <Grid Grid.RowSpacing="0">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="*"/>
+                  <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Grid.RowSpan="2" Aspect="AspectFill" Source="{Binding ImageUrl}"/>
+                <StackLayout Grid.Row="1" BackgroundColor="#80000000" Padding="12">
+                  <Label TextColor="White" Text="{Binding Text}" FontSize="16" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+              </Grid>
+            </DataTemplate>
+          </cv:CarouselView.ItemTemplate>
+        </cv:CarouselView>
+        <control:CarouselIndicators Grid.Row="0" VerticalOptions="End" IndicatorHeight="10" IndicatorWidth="10" UnselectedIndicator="unselected_circle.png" SelectedIndicator="selected_circle.png" Position="{Binding Position}" ItemsSource="{Binding ImagensInicio}"
+                                    Padding="0,0,0,60"/>
+      </Grid>
+      <Button Grid.Row="2" Text="Entrar" Command="{Binding EntrarCommand}"/>
+      <Button Grid.Row="3" Text="Registrar-me" Command="{Binding RegistrarCommand}"/>
+    </Grid>
+  </ContentPage.Content>
+</ContentPage>

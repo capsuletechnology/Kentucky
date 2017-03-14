@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kentucky.View.NovaDescoberta"
+             Title="Kentucky">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Ação 1" Order="Secondary"/>
+    <ToolbarItem Text="Ação 2" Order="Secondary"/>
+  </ContentPage.ToolbarItems>
+  <ContentPage.Content>
+    <Grid Padding="10" VerticalOptions="Center">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="Auto"/>
+      </Grid.RowDefinitions>
+
+      <Entry Grid.Row="0" Placeholder="Diga algo legal" FontSize="Large"/>
+      
+      <Label Grid.Row="1" Text="Escolha uma cor de fundo:" FontSize="Medium"/>
+      
+      <Grid Grid.Row="2" Padding="20,10,20,10">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Text="1" Grid.Row="0" Grid.Column="0"/>
+        <Button Text="2" Grid.Row="0" Grid.Column="1"/>
+        <Button Text="3" Grid.Row="0" Grid.Column="2"/>
+        <Button Text="4" Grid.Row="0" Grid.Column="3"/>
+        <Button Text="5" Grid.Row="0" Grid.Column="4"/>
+        <Button Text="6" Grid.Row="1" Grid.Column="0"/>
+        <Button Text="7" Grid.Row="1" Grid.Column="1"/>
+        <Button Text="8" Grid.Row="1" Grid.Column="2"/>
+        <Button Text="9" Grid.Row="1" Grid.Column="3"/>
+        <Button Text="0" Grid.Row="1" Grid.Column="4"/>
+      </Grid>
+
+      <BoxView Grid.Row="3" BackgroundColor="Purple" HeightRequest="300"/>
+
+      <Button Grid.Row="4" Text="Enviar"/>
+      
+    </Grid>
+  </ContentPage.Content>
+</ContentPage>

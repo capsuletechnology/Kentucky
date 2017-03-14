@@ -1,11 +1,14 @@
 C:\Projects\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\Kentucky.Droid.dll
 C:\Projects\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\FormsViewGroup.dll
+C:\Projects\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\Projects\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\Xamarin.Android.Support.Design.dll
 C:\Projects\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll
 C:\Projects\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\Xamarin.Android.Support.v7.AppCompat.dll
 C:\Projects\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\Xamarin.Android.Support.v7.CardView.dll
 C:\Projects\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\Xamarin.Android.Support.v7.MediaRouter.dll
 C:\Projects\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
+C:\Projects\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\Xamarin.Android.Support.Vector.Drawable.dll
+C:\Projects\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\Xamarin.Forms.CarouselView.dll
 C:\Projects\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll
 C:\Projects\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll
 C:\Projects\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.dll

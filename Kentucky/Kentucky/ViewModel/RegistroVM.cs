@@ -1,4 +1,6 @@
 ﻿using Kentucky.Helper;
+using Kentucky.View;
+using Kentucky.View.MasterDetail;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -7,7 +9,7 @@ namespace Kentucky.ViewModel
     public class RegistroVM : ViewModelBase
     {
         public ICommand RegistrarCommand { get; set; }
-        public ICommand CancelarCommand { get; set; }
+        public ICommand FacebookCommand { get; set; }
 
         private string email;
         public string Email { get { return email; } set { email = value; OnPropertyChanged(); } }
@@ -24,18 +26,19 @@ namespace Kentucky.ViewModel
         public RegistroVM()
         {
             RegistrarCommand = new Command(Registrar);
-            CancelarCommand = new Command(Cancelar);
+            FacebookCommand = new Command(RegistrarFacebook);
         }
 
         async void Registrar()
         {
             await Repositorio.Mensagem("REGISTRO", "Registrado com sucesso!", "OK");
-            await Repositorio.Voltar();
+            Repositorio.MainPage(new MainPage());
         }
 
-        async void Cancelar()
+        async void RegistrarFacebook()
         {
-            await Repositorio.Voltar();
+            await Repositorio.Mensagem("REGISTRO FACEBOOK", "Registrado usando Facebook com sucesso!", "OK");
+            Repositorio.MainPage(new MainPage());
         }
     }
 }
