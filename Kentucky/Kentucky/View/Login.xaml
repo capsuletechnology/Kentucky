@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Kentucky.View.Login">
+             xmlns:b="clr-namespace:Kentucky.Helper;assembly=Kentucky"
+             x:Class="Kentucky.View.Login" Style="{StaticResource BGFISRT}">
   <ContentPage.Content>
     <Grid Padding="10" VerticalOptions="Center">
       <Grid.RowDefinitions>
@@ -12,12 +13,11 @@
         <RowDefinition Height="Auto"/>
         <RowDefinition Height="Auto"/>
       </Grid.RowDefinitions>
-      <Label Grid.Row="0" Text="Login" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-      <Entry Grid.Row="1" Text="{Binding Login}" Placeholder="Nome de usuário ou e-mail"/>
-      <Entry Grid.Row="2" Text="{Binding Senha}" Placeholder="Senha" IsPassword="True"/>
-      <Button Grid.Row="3" Text="Entrar" Command="{Binding LoginCommand}"/>
-      <Button Grid.Row="4" Text="Entrar Com O Facebook" Command="{Binding FacebookCommand}"/>
-      <Label Grid.Row="5" Text="Esqueceu sua senha?" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center">
+      <b:xEntry Grid.Row="0" Text="{Binding Login}" Placeholder="Nome de usuário ou e-mail" FontSize="Large"  Style="{StaticResource xEntry}"/>
+      <b:xEntry Grid.Row="1" Text="{Binding Senha}" Placeholder="Senha" IsPassword="True" FontSize="Large" Style="{StaticResource xEntry}"/>
+      <Button Grid.Row="2" Text="Entrar" Style="{StaticResource btnBlue}" Command="{Binding LoginCommand}"/>
+      <Button Grid.Row="3" Text="Entrar Com O Facebook" Style="{StaticResource btnRegister}" Command="{Binding FacebookCommand}"/>
+      <Label Grid.Row="4" Text="Esqueceu sua senha?" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Style="{StaticResource xLabel}">
         <Label.GestureRecognizers>
           <TapGestureRecognizer Command="{Binding RecuperarCommand}"/>
         </Label.GestureRecognizers>

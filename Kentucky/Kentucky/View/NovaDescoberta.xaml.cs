@@ -15,6 +15,7 @@ namespace Kentucky.View
         public NovaDescoberta()
         {
             InitializeComponent();
+            BindingContext = new ViewModel.NovaDescobertaVM();
         }
 
         protected override bool OnBackButtonPressed()
@@ -22,5 +23,6 @@ namespace Kentucky.View
             Repositorio.MainPage(new MainPage());
             return true;
         }
+
     }
 }

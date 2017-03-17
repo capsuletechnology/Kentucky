@@ -13,7 +13,9 @@ namespace Kentucky.View
     {
         public Principal()
         {
+
             InitializeComponent();
+            
         }
 
         protected override bool OnBackButtonPressed()

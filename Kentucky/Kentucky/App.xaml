@@ -3,8 +3,61 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kentucky.App">
   <Application.Resources>
+    <ResourceDictionary>
+      <!-- Painel De Cores -->
+      <Color x:Key="Blue">#2C3E50</Color>
+      <Color x:Key="Ciano">#415DAE</Color>
+      <Color x:Key="Silver">#7F8C8D</Color>
+      <Color x:Key="White">#FFFFFF</Color>
 
-    <!-- Application resource dictionary -->
+      <!-- Button BACKGROUND-MASTER-->
+      <Style x:Key="BGMASTER" TargetType="ContentPage">
+        <Setter Property="BackgroundColor" Value="#55555"/>
+      </Style>
 
+      <!-- Button BACKGROUND-MASTER-->
+      <Style x:Key="BGSobre" TargetType="ContentPage">
+        <Setter Property="BackgroundImage" Value="bgSobre.png"/>
+      </Style>
+
+      <!-- Button Sucess-->
+      <Style x:Key="btnBlue" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource Blue}"/>
+        <Setter Property="TextColor" Value="{StaticResource White}"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontFamily" Value="Fonts/Flaticon.ttf#Flaticon"/>
+        <Setter Property="HeightRequest" Value="60"/>
+      </Style>
+      
+      <!-- Button Register-->
+      <Style x:Key="btnRegister" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource Ciano}"/>
+        <Setter Property="TextColor" Value="{StaticResource White}"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontFamily" Value="Fonts/Flaticon.ttf#Flaticon"/>
+        <Setter Property="HeightRequest" Value="60"/>
+      </Style>
+
+      <!-- Entry -->
+      <Style x:Key="xEntry" TargetType="Entry">
+        <Setter Property="TextColor" Value="{StaticResource White}"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="PlaceholderColor" Value="{StaticResource White}"/>
+        <Setter Property="FontFamily" Value="Fonts/Flaticon.ttf#Flaticon"/>
+      </Style>
+
+      <!-- Label -->
+      <Style x:Key="xLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource White}"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="FontFamily" Value="Fonts/Flaticon.ttf#Flaticon"/>
+      </Style>
+
+      <!-- Button BACKGROUND-PADRÃO-->
+      <Style x:Key="BGFISRT" TargetType="ContentPage">
+        <Setter Property="BackgroundColor" Value="#333333"/>
+      </Style>
+      
+    </ResourceDictionary>
   </Application.Resources>
 </Application>

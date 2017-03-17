@@ -2,6 +2,10 @@ Kentucky.Droid.MainActivity, Kentucky.Droid;md519cd434892a0d6d7dc3deb98a841dfc6.
 Kentucky.Droid.MainActivity, Kentucky.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md519cd434892a0d6d7dc3deb98a841dfc6.MainActivity
 Kentucky.Droid.MainActivity;md519cd434892a0d6d7dc3deb98a841dfc6.MainActivity
 kentucky.droid.MainActivity;md519cd434892a0d6d7dc3deb98a841dfc6.MainActivity
+Kentucky.Droid.Components.EntryDroid, Kentucky.Droid;md5eccd292f15d42c6519b52193d5bec4ab.EntryDroid
+Kentucky.Droid.Components.EntryDroid, Kentucky.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5eccd292f15d42c6519b52193d5bec4ab.EntryDroid
+Kentucky.Droid.Components.EntryDroid;md5eccd292f15d42c6519b52193d5bec4ab.EntryDroid
+kentucky.droid.components.EntryDroid;md5eccd292f15d42c6519b52193d5bec4ab.EntryDroid
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor

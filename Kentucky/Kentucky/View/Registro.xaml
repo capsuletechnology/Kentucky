@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Kentucky.View.Registro">
+             xmlns:b="clr-namespace:Kentucky.Helper;assembly=Kentucky"
+             x:Class="Kentucky.View.Registro" Style="{StaticResource BGFISRT}">
   <ContentPage.Content>
     <Grid Padding="10">
       <Grid.RowDefinitions>
@@ -15,19 +16,19 @@
         <RowDefinition Height="Auto"/>
         <RowDefinition Height="Auto"/>
       </Grid.RowDefinitions>
-      <Label Grid.Row="0" Text="Registrar" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-      <Entry Grid.Row="1" Text="{Binding Email}" Placeholder="E-mail"/>
-      <Entry Grid.Row="2" Text="{Binding Usuario}" Placeholder="Escolher nome de usuário"/>
-      <Entry Grid.Row="3" Text="{Binding Senha}" Placeholder="Escolher senha"/>
-      <Entry Grid.Row="4" Text="{Binding CPF}" Placeholder="CPF"/>
-      <Button Grid.Row="5" Text="Registrar" Command="{Binding RegistrarCommand}"/>
-      <Button Grid.Row="6" Text="Registrar Com Facebook" Command="{Binding FacebookCommand}"/>
-      <StackLayout Grid.Row="7" Orientation="Horizontal" HorizontalOptions="Center">
-        <Label Text="Clique Aqui" FontSize="Medium"/>
-        <Label Text="para ler os termos de uso." FontSize="Medium"/>
+      <Label Grid.Row="0" Text="Registrar" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" Style="{StaticResource xLabel}"/>
+      <b:xEntry Grid.Row="1" Text="{Binding Email}" Placeholder="E-mail" Style="{StaticResource xEntry}"/>
+      <b:xEntry Grid.Row="2" Text="{Binding Usuario}" Placeholder="Escolher nome de usuário" Style="{StaticResource xEntry}"/>
+      <b:xEntry Grid.Row="3" Text="{Binding Senha}" Placeholder="Escolher senha" Style="{StaticResource xEntry}"/>
+      <b:xEntry Grid.Row="4" Text="{Binding CPF}" Placeholder="CPF" Style="{StaticResource xEntry}"/>
+      <Button Grid.Row="5" Text="Registrar" Style="{StaticResource btnBlue}" Command="{Binding RegistrarCommand}" />
+      <Button Grid.Row="6" Text="Registrar Com Facebook" Style="{StaticResource btnRegister}" Command="{Binding FacebookCommand}" />
+      <StackLayout Grid.Row="7" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+        <Label Text="Clique Aqui" TextColor="#0099FF" Style="{StaticResource xLabel}"/>
+        <Label Text="para ler os termos de uso." FontSize="Medium" Style="{StaticResource xLabel}"/>
       </StackLayout>
       <StackLayout Grid.Row="8" Orientation="Horizontal" HorizontalOptions="Center" Padding="20">
-        <Label Text="*Todos os dados para cadastro não serão exibidos para outros usuários com exceção do nome de usuário." FontSize="Medium" FontAttributes="Bold"/>
+        <Label Text="*Todos os dados para cadastro não serão exibidos para outros usuários com exceção do nome de usuário." FontSize="Medium" FontAttributes="Bold" Style="{StaticResource xLabel}"/>
       </StackLayout>
     </Grid>
   </ContentPage.Content>
