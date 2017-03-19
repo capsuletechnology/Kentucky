@@ -14,34 +14,34 @@ namespace Kentucky.ViewModel.MasterDetail
 {
     public class MasterPageVM : ViewModelBase
     {
-        public ObservableCollection<MasterPageItem> ItensMasterPage { get; set; }
+        public ObservableCollection<MPItem> ItensMasterPage { get; set; }
 
         public MasterPageVM()
         {
-            ItensMasterPage = new ObservableCollection<MasterPageItem>
+            ItensMasterPage = new ObservableCollection<MPItem>
             {
-                new MasterPageItem
+                new MPItem
                 {
                     Title = "Descobrir",
-                    TargetType = typeof(Principal)
+                    TargetType = typeof(Main)
                 },
 
-                new MasterPageItem
+                new MPItem
                 {
                     Title = "Nova Descoberta",
-                    TargetType = typeof(NovaDescoberta)
+                    TargetType = typeof(NewDiscovery)
                 },
 
-                new MasterPageItem
+                new MPItem
                 {
                     Title = "Sobre",
-                    TargetType = typeof(Sobre)
+                    TargetType = typeof(About)
                 },
 
-                new MasterPageItem
+                new MPItem
                 {
                     Title = "Sair",
-                    TargetType = typeof(Inicio)
+                    TargetType = typeof(Start)
                 }
             };
         }

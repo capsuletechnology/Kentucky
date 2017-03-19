@@ -8,7 +8,7 @@ namespace Kentucky.Model
 {
     public class Favorite
     {
-        public int favoriteId { get; set; }
+        public int? favoriteId { get; set; }
         public User user { get; set; }
         public Post post { get; set; }
     }

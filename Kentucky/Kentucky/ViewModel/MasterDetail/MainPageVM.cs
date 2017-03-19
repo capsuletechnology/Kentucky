@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace Kentucky.ViewModel.MasterDetail
 {
-    public class MainPageVM : MasterDetailPage
+    public class MainPageVM
     {
     }
 }

@@ -20,7 +20,7 @@ namespace Kentucky.View
         
         protected override bool OnBackButtonPressed()
         {
-            Repositorio.MainPage(new Inicio());
+            Repository.MainPage(new Start());
             return true;
         }
     }

@@ -8,7 +8,7 @@ namespace Kentucky.Model
 {
     public class Report
     {
-        public int reportId { get; set; }
+        public int? reportId { get; set; }
         public User user { get; set; }
         public Post post { get; set; }
     }

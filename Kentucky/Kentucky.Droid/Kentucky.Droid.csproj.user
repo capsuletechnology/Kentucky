@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <SelectedDevice>Emulador</SelectedDevice>
-    <ProjectView>ShowAllFiles</ProjectView>
+    <SelectedDevice>x86</SelectedDevice>
+    <ProjectView>ProjectFiles</ProjectView>
     <AndroidDesignerPreferredDevice>Nexus S</AndroidDesignerPreferredDevice>
     <AndroidDesignerPreferredTheme>Theme.DeviceDefault</AndroidDesignerPreferredTheme>
   </PropertyGroup>

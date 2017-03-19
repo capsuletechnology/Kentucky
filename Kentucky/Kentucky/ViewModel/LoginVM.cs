@@ -10,34 +10,34 @@ namespace Kentucky.ViewModel
     {
         public ICommand LoginCommand { get; set; }
         public ICommand FacebookCommand { get; set; }
-        public ICommand RecuperarCommand { get; set; }
+        public ICommand RecoverCommand { get; set; }
 
-        private string login;
-        public string Login { get { return login; } set { login = value; OnPropertyChanged(); } }
+        private string user;
+        public string User { get { return user; } set { user = value; OnPropertyChanged(); } }
 
-        private string senha;
-        public string Senha { get { return senha; } set { senha = value; OnPropertyChanged(); } }
+        private string password;
+        public string Password { get { return password; } set { password = value; OnPropertyChanged(); } }
 
         public LoginVM()
         {
-            LoginCommand = new Command(Logar);
-            FacebookCommand = new Command(EntrarFacebook);
-            RecuperarCommand = new Command(RecuperarConta);            
+            LoginCommand = new Command(Login);
+            FacebookCommand = new Command(Facebook);
+            RecoverCommand = new Command(Recover);            
         }
         
-        void Logar()
+        void Login()
         {
-            Repositorio.MainPage(new MainPage());
+            Repository.MainPage(new MainPage());
         }
 
-        void EntrarFacebook()
+        void Facebook()
         {
-            Repositorio.MainPage(new MainPage());
+            Repository.MainPage(new MainPage());
         }
 
-        void RecuperarConta()
+        void Recover()
         {
-            Repositorio.MainPage(new RecuperarConta());
+            Repository.MainPage(new Recover());
         }
     }
 }

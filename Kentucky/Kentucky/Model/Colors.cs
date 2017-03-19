@@ -18,6 +18,5 @@ namespace Kentucky.Model
         public string Wisteria { get; } = "#8e44ad";
         public string Clouds { get; } = "#bdc3c7";
         public string Asbestos { get; } = "#555555";
-
     }
 }
