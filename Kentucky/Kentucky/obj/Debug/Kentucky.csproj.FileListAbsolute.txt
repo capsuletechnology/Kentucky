@@ -50,3 +50,39 @@ C:\Projects\Kentucky3\Kentucky\Kentucky\obj\Debug\Kentucky.dll
 C:\Projects\Kentucky3\Kentucky\Kentucky\obj\Debug\Kentucky.pdb
 C:\Projects\Kentucky3\Kentucky\Kentucky\obj\Debug\Kentucky.dll.mdb
 C:\Projects\Kentucky3\Kentucky\Kentucky\bin\Debug\Kentucky.dll.mdb
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\Kentucky.dll.config
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\Kentucky.dll
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\Kentucky.pdb
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\Newtonsoft.Json.dll
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\System.Net.Http.dll
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\System.Net.Http.Extensions.dll
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\System.Net.Http.Primitives.dll
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\Xamarin.Forms.CarouselView.dll
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\Xamarin.Forms.Core.dll
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\Newtonsoft.Json.xml
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\System.Net.Http.xml
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\System.Net.Http.Extensions.xml
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\System.Net.Http.Primitives.xml
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\Xamarin.Forms.Core.pdb
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\Xamarin.Forms.Core.xml
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\Xamarin.Forms.Platform.pdb
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\obj\Debug\Kentucky.csproj.App.config
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\obj\Debug\Kentucky.csprojResolveAssemblyReference.cache
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\obj\Debug\Kentucky.App.xaml.g.cs
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\obj\Debug\Kentucky.View.Login.xaml.g.cs
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\obj\Debug\Kentucky.View.Register.xaml.g.cs
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\obj\Debug\Kentucky.View.About.xaml.g.cs
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\obj\Debug\Kentucky.View.Main.xaml.g.cs
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\obj\Debug\Kentucky.View.Recover.xaml.g.cs
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\obj\Debug\Kentucky.View.Start.xaml.g.cs
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\obj\Debug\Kentucky.View.MasterDetail.MainPage.xaml.g.cs
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\obj\Debug\Kentucky.View.MasterDetail.MasterPage.xaml.g.cs
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\obj\Debug\Kentucky.View.NewDiscovery.xaml.g.cs
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\obj\Debug\Kentucky.dll
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\obj\Debug\Kentucky.pdb
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\obj\Debug\Kentucky.dll.mdb
+D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky\bin\Debug\Kentucky.dll.mdb

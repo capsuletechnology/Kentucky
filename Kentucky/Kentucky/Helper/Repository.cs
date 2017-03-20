@@ -10,6 +10,7 @@ namespace Kentucky.Helper
 {
     public class Repository
     {
+
         public static void MainPage(Page page)
         {
             Application.Current.MainPage = page;
@@ -43,6 +44,15 @@ namespace Kentucky.Helper
                 if (task.Result) { DependencyService.Get<ICloseApplication>().closeApplication(); }
             });
             return true;
+        }
+
+        public double RatingPost(double countLikes, double countFavs, double countReports)
+        {
+            double x;
+            x = ((countLikes * 6.366382) + (countFavs * 12.28076) - (countReports * 8.716538)) / 27.36368;
+            if(x <= 0)
+                return 0;
+            return x;
         }
     }
 }

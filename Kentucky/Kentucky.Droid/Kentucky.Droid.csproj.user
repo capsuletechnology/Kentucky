@@ -5,5 +5,6 @@
     <ProjectView>ProjectFiles</ProjectView>
     <AndroidDesignerPreferredDevice>Nexus S</AndroidDesignerPreferredDevice>
     <AndroidDesignerPreferredTheme>Theme.DeviceDefault</AndroidDesignerPreferredTheme>
+    <DefaultDevice>x86</DefaultDevice>
   </PropertyGroup>
 </Project>

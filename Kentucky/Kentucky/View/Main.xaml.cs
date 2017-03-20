@@ -13,7 +13,8 @@ namespace Kentucky.View
     {
         public Main()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            BindingContext = new ViewModel.MainVM();
         }
 
         protected override bool OnBackButtonPressed()
