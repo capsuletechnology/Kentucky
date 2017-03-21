@@ -10,6 +10,7 @@ namespace Kentucky.Model
     {
         public int? userId { get; set; }
         public string userFullName { get; set; }
+        public string nickname { get; set; }
         public string email { get; set; }
         public string phone { get; set; }
         public double rating { get; set; }

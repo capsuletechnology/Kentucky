@@ -24,33 +24,23 @@
       <Style x:Key="btnBlue" TargetType="Button">
         <Setter Property="BackgroundColor" Value="{StaticResource Blue}"/>
         <Setter Property="TextColor" Value="{StaticResource White}"/>
-        <Setter Property="FontSize" Value="14"/>
-        <Setter Property="FontFamily" Value="Fonts/Flaticon.ttf#Flaticon"/>
-        <Setter Property="HeightRequest" Value="60"/>
       </Style>
       
       <!-- Button Register-->
       <Style x:Key="btnRegister" TargetType="Button">
         <Setter Property="BackgroundColor" Value="{StaticResource Ciano}"/>
         <Setter Property="TextColor" Value="{StaticResource White}"/>
-        <Setter Property="FontSize" Value="14"/>
-        <Setter Property="FontFamily" Value="Fonts/Flaticon.ttf#Flaticon"/>
-        <Setter Property="HeightRequest" Value="60"/>
       </Style>
 
       <!-- Entry -->
       <Style x:Key="xEntry" TargetType="Entry">
         <Setter Property="TextColor" Value="{StaticResource White}"/>
-        <Setter Property="FontSize" Value="14"/>
         <Setter Property="PlaceholderColor" Value="{StaticResource White}"/>
-        <Setter Property="FontFamily" Value="Fonts/Flaticon.ttf#Flaticon"/>
       </Style>
 
       <!-- Label -->
       <Style x:Key="xLabel" TargetType="Label">
         <Setter Property="TextColor" Value="{StaticResource White}"/>
-        <Setter Property="FontSize" Value="16"/>
-        <Setter Property="FontFamily" Value="Fonts/Flaticon.ttf#Flaticon"/>
       </Style>
 
       <!-- Button BACKGROUND-PADRÃO-->

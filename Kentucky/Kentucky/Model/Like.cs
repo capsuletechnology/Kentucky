@@ -8,7 +8,8 @@ namespace Kentucky.Model
 {
     public class Like
     {
-        public int? likeId { get; set; }
+        public int? likeID { get; set; }
+        public int postUserID { get; set; }
         public User user { get; set; }
         public Post post { get; set; }
     }

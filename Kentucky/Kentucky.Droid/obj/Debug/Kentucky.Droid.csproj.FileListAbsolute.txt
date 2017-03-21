@@ -347,4 +347,3 @@ D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky.Droid\
 D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky.Droid\obj\Debug\Kentucky.Droid.dll.mdb
-D:\Gabriel\Estudo\PrataMaster\Projeto Kentucky\Kentucky\Kentucky\Kentucky.Droid\bin\Debug\Kentucky.Droid.dll.mdb

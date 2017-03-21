@@ -18,8 +18,9 @@ namespace Kentucky.Api
         public static async Task InsertUser(User user)
         {
             var _user = new User
-            {
+            {                
                 userFullName = user.userFullName,
+                nickname = user.nickname,
                 email = user.email,
                 phone = user.phone,
                 rating = 0,
@@ -61,10 +62,52 @@ namespace Kentucky.Api
                 string json = await response.Content.ReadAsStringAsync();
             }
         }
+
+        public static async Task InsertReport(Report report)
+        {
+            string jsonInput = JsonConvert.SerializeObject(report);
+
+            HttpContent contentPost = new StringContent(jsonInput, Encoding.UTF8, "application/json");
+
+            using (var client = new HttpClient())
+            {
+                var response = client.PostAsync("http://189.103.76.4:8080/WS_Manhattan/webresources/model.produto/", contentPost).Result;
+                response.EnsureSuccessStatusCode();
+                string json = await response.Content.ReadAsStringAsync();
+            }
+        }
+
+        public static async Task InsertLike(Like like)
+        {
+            string jsonInput = JsonConvert.SerializeObject(like);
+
+            HttpContent contentPost = new StringContent(jsonInput, Encoding.UTF8, "application/json");
+
+            using (var client = new HttpClient())
+            {
+                var response = client.PostAsync("http://189.103.76.4:8080/WS_Manhattan/webresources/model.produto/", contentPost).Result;
+                response.EnsureSuccessStatusCode();
+                string json = await response.Content.ReadAsStringAsync();
+            }
+        }
+
+        public static async Task InsertFavorite(Favorite favorite)
+        {
+            string jsonInput = JsonConvert.SerializeObject(favorite);
+
+            HttpContent contentPost = new StringContent(jsonInput, Encoding.UTF8, "application/json");
+
+            using (var client = new HttpClient())
+            {
+                var response = client.PostAsync("http://189.103.76.4:8080/WS_Manhattan/webresources/model.produto/", contentPost).Result;
+                response.EnsureSuccessStatusCode();
+                string json = await response.Content.ReadAsStringAsync();
+            }
+        }
         #endregion
 
         #region UPDATE
-        public static void UpdateUser(User user)
+        public static async Task UpdateUser(User user)
         {
             string jsonInput = JsonConvert.SerializeObject(user);
 
@@ -73,10 +116,12 @@ namespace Kentucky.Api
             using (var client = new HttpClient())
             {
                 var response = client.PutAsync("http://189.103.76.4:8080/WS_Manhattan/webresources/model.cliente/" + user.userId, contentPost).Result;
+                response.EnsureSuccessStatusCode();
+                string json = await response.Content.ReadAsStringAsync();
             }
         }
 
-        public static void UpdatePost(Post post)
+        public static async Task UpdatePost(Post post)
         {
             string jsonInput = JsonConvert.SerializeObject(post);
 
@@ -84,55 +129,9 @@ namespace Kentucky.Api
 
             using (var client = new HttpClient())
             {
-                var response = client.PutAsync("http://189.103.76.4:8080/WS_Manhattan/webresources/model.cliente/" + post.postId, contentPost).Result;
-            }
-        }
-
-        public static void InsertReport(Post post, Report report)
-        {
-            var _post = post;
-
-            _post.reports.Add(report);
-
-            string jsonInput = JsonConvert.SerializeObject(_post);
-
-            HttpContent contentPost = new StringContent(jsonInput, Encoding.UTF8, "application/json");
-
-            using (var client = new HttpClient())
-            {
-                var response = client.PutAsync("http://189.103.76.4:8080/WS_Manhattan/webresources/model.cliente/" + _post.postId, contentPost).Result;
-            }
-        }
-
-        public static void InsertLike(Post post, Like like)
-        {
-            var _post = post;
-
-            _post.likes.Add(like);
-
-            string jsonInput = JsonConvert.SerializeObject(_post);
-
-            HttpContent contentPost = new StringContent(jsonInput, Encoding.UTF8, "application/json");
-
-            using (var client = new HttpClient())
-            {
-                var response = client.PutAsync("http://189.103.76.4:8080/WS_Manhattan/webresources/model.cliente/" + _post.postId, contentPost).Result;
-            }
-        }
-
-        public static void InsertFavorite(Post post, Favorite favorite)
-        {
-            var _post = post;
-
-            _post.favorites.Add(favorite);
-
-            string jsonInput = JsonConvert.SerializeObject(_post);
-
-            HttpContent contentPost = new StringContent(jsonInput, Encoding.UTF8, "application/json");
-
-            using (var client = new HttpClient())
-            {
-                var response = client.PutAsync("http://189.103.76.4:8080/WS_Manhattan/webresources/model.cliente/" + _post.postId, contentPost).Result;
+                var response = client.PutAsync("http://189.103.76.4:8080/WS_Manhattan/webresources/model.cliente/", contentPost).Result;
+                response.EnsureSuccessStatusCode();
+                string json = await response.Content.ReadAsStringAsync();
             }
         }
         #endregion

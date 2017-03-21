@@ -23,9 +23,14 @@ namespace Kentucky.View.MasterDetail
             var item = e.SelectedItem as MPItem;
             if (item != null)
             {
-                Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
-                masterPage.ListView.SelectedItem = null;
-                IsPresented = false;
+                if (item.TargetType.Name.Equals("Start"))
+                    Application.Current.MainPage = new NavigationPage(new Start());
+                else
+                {
+                    Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                    masterPage.ListView.SelectedItem = null;
+                    IsPresented = false;
+                }
             }
         }
     }

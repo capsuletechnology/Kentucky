@@ -8,7 +8,7 @@ namespace Kentucky.Model
 {
     public class Login
     {
-        public string userNick { get; set; }
+        public string user { get; set; }
         public string password { get; set; }
     }
 }
