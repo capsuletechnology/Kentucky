@@ -14,11 +14,14 @@ namespace Kentucky.ViewModel
         private string fullName;
         public string FullName { get { return fullName; } set { fullName = value; OnPropertyChanged(); } }
 
-        private string email;
-        public string Email { get { return email; } set { email = value; OnPropertyChanged(); } }
-
         private string phone;
         public string Phone { get { return phone; } set { phone = value; OnPropertyChanged(); } }
+
+        private string nickname;
+        public string Nickname { get { return nickname; } set { nickname = value; OnPropertyChanged(); } }
+
+        private string email;
+        public string Email { get { return email; } set { email = value; OnPropertyChanged(); } }
 
         private string user;
         public string User { get { return user; } set { user = value; OnPropertyChanged(); } }
@@ -34,16 +37,16 @@ namespace Kentucky.ViewModel
 
         async void Register()
         {
-            await Repository.Message("Senha Criptografada", Password + "\n\n" + Repository.Encrypt(Password), "OK");
-            //await Repositorio.Mensagem("REGISTRO", "Registrado com sucesso!", "OK");
-            //Repositorio.MainPage(new MainPage());
+            //await Repository.Message("Senha Criptografada", Password + "\n\n" + Repository.Encrypt(Password), "OK");
+            await Repository.Message("REGISTRO", "Registrado com sucesso!", "OK");
+            Repository.MainPage(new MainPage());
         }
 
         async void Facebook()
         {
-            await Repository.Message("Senha Criptografada", Password + "\n\n" + Repository.Encrypt(Password), "OK");
-            //await Repository.Message("REGISTRO FACEBOOK", "Registrado usando Facebook com sucesso!", "OK");
-            //Repository.MainPage(new MainPage());
+            //await Repository.Message("Senha Criptografada", Password + "\n\n" + Repository.Encrypt(Password), "OK");
+            await Repository.Message("REGISTRO FACEBOOK", "Registrado usando Facebook com sucesso!", "OK");
+            Repository.MainPage(new MainPage());
         }
     }
 }

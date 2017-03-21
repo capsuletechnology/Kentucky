@@ -13,11 +13,11 @@
         <RowDefinition Height="Auto"/>
         <RowDefinition Height="Auto"/>
       </Grid.RowDefinitions>
-      <b:xEntry Grid.Row="0" Text="{Binding User}" Placeholder="Nome de usuário ou e-mail" FontSize="Large"  Style="{StaticResource xEntry}"/>
-      <b:xEntry Grid.Row="1" Text="{Binding Password}" Placeholder="Senha" IsPassword="True" FontSize="Large" Style="{StaticResource xEntry}"/>
+      <b:xEntry Grid.Row="0" Text="{Binding User}" Placeholder="Nome de usuário ou e-mail" Style="{StaticResource xEntry}"/>
+      <b:xEntry Grid.Row="1" Text="{Binding Password}" Placeholder="Senha" IsPassword="True" Style="{StaticResource xEntry}"/>
       <Button Grid.Row="2" Text="Entrar" Style="{StaticResource btnBlue}" Command="{Binding LoginCommand}"/>
       <Button Grid.Row="3" Text="Entrar Com O Facebook" Style="{StaticResource btnRegister}" Command="{Binding FacebookCommand}"/>
-      <Label Grid.Row="4" Text="Esqueceu sua senha?" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Style="{StaticResource xLabel}">
+      <Label Grid.Row="4" Text="Esqueceu sua senha?" FontSize="Medium" HorizontalTextAlignment="Center" Margin="0,10,0,0" Style="{StaticResource xLabel}">
         <Label.GestureRecognizers>
           <TapGestureRecognizer Command="{Binding RecoverCommand}"/>
         </Label.GestureRecognizers>

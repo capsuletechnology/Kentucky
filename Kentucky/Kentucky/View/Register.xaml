@@ -17,18 +17,19 @@
         <RowDefinition Height="Auto"/>
       </Grid.RowDefinitions>
       <b:xEntry Grid.Row="0" Text="{Binding FullName}" Placeholder="Nome Completo" Style="{StaticResource xEntry}"/>
-      <b:xEntry Grid.Row="1" Text="{Binding Email}" Placeholder="E-mail" Style="{StaticResource xEntry}"/>
-      <b:xEntry Grid.Row="2" Text="{Binding Phone}" Placeholder="Telefone" Style="{StaticResource xEntry}"/>
-      <b:xEntry Grid.Row="3" Text="{Binding User}" Placeholder="Nome de Usuário" Style="{StaticResource xEntry}"/>
-      <b:xEntry Grid.Row="4" Text="{Binding Password}" Placeholder="Senha" Style="{StaticResource xEntry}"/>
-      <Button Grid.Row="5" Text="Registrar" Style="{StaticResource btnBlue}" Command="{Binding RegisterCommand}" />
-      <Button Grid.Row="6" Text="Registrar Com Facebook" Style="{StaticResource btnRegister}" Command="{Binding FacebookCommand}" />
-      <StackLayout Grid.Row="7" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+      <b:xEntry Grid.Row="1" Text="{Binding Phone}" Placeholder="Telefone" Style="{StaticResource xEntry}"/>
+      <b:xEntry Grid.Row="2" Text="{Binding Nickname}" Placeholder="Apelido" Style="{StaticResource xEntry}"/>
+      <b:xEntry Grid.Row="3" Text="{Binding Email}" Placeholder="E-mail" Style="{StaticResource xEntry}"/>      
+      <b:xEntry Grid.Row="4" Text="{Binding User}" Placeholder="Nome de Usuário" Style="{StaticResource xEntry}"/>
+      <b:xEntry Grid.Row="5" Text="{Binding Password}" Placeholder="Senha" Style="{StaticResource xEntry}"/>
+      <Button Grid.Row="6" Text="Registrar" Style="{StaticResource btnBlue}" Command="{Binding RegisterCommand}" />
+      <Button Grid.Row="7" Text="Registrar Com Facebook" Style="{StaticResource btnRegister}" Command="{Binding FacebookCommand}" />
+      <StackLayout Grid.Row="8" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="0,10,0,0">
         <Label Text="Clique Aqui" TextColor="#0099FF" FontSize="Medium" Style="{StaticResource xLabel}"/>
         <Label Text="para ler os termos de uso." FontSize="Medium" Style="{StaticResource xLabel}"/>
       </StackLayout>
-      <StackLayout Grid.Row="8" Orientation="Horizontal" HorizontalOptions="Center" Padding="20">
-        <Label Text="*Todos os dados para cadastro não serão exibidos para outros usuários com exceção do nome de usuário." FontSize="Medium" FontAttributes="Bold" Style="{StaticResource xLabel}"/>
+      <StackLayout Grid.Row="9" HorizontalOptions="CenterAndExpand" Padding="20,0,20,0">
+        <Label Text="*Todos os dados para cadastro não serão exibidos para outros usuários com exceção do apelido." FontSize="Medium" XAlign="Center" Style="{StaticResource xLabel}"/>
       </StackLayout>
     </Grid> 
   </ContentPage.Content>
